@@ -1,0 +1,58 @@
+
+* {
+    box-sizing: border-box; /* Assure que le padding et la bordure sont inclus dans les dimensions */
+}
+
+html, body {
+    height: 100%; /* Assurez-vous que le corps prend toute la hauteur de la fenêtre */
+    margin: 0; /* Supprimez les marges par défaut */
+    font-family: 'Times New Roman', Times, serif; /* Police de caractère par défaut */
+    line-height: 1.6; /* Améliore la lisibilité */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    background: linear-gradient(to right, #f4f4f4, #be97ca); /* Dégradé doux en arrière-plan */
+}
+
+header {
+    background: linear-gradient(to right, #be60f5, #6cd2e9); /* Dégradé pour le header */
+    color: white; /* Couleur du texte */
+    padding: 20px; /* Ajout de remplissage */
+    text-align: center; /* Centre le texte */
+}
+
+main {
+    flex: 1; /* Permet au main de prendre tout l'espace disponible */
+    padding: 20px; /* Ajout de remplissage */
+    background-color: white; /* Couleur de fond du main */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour donner de la profondeur */
+    margin: 20px; /* Marge autour du main */
+}
+
+h2 {
+    color: #333; /* Couleur du sous-titre */
+}
+
+.button {
+    display: inline-block; /* Affiche comme un bloc en ligne pour les marges */
+    background-color: #be60f5; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    padding: 10px 20px; /* Remplissage du bouton */
+    text-decoration: none; /* Supprime le soulignement */
+    border-radius: 5px; /* Coins arrondis pour le bouton */
+    transition: background-color 0.3s ease; /* Transition pour un effet au survol */
+}
+
+.button:hover {
+    background-color: #6cd2e9; /* Couleur au survol du bouton */
+}
+
+footer {
+    background: linear-gradient(to right, #6cd2e9, #be60f5); /* Dégradé pour le footer */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centre le texte du footer */
+    padding: 10px; /* Ajout de remplissage */
+}
