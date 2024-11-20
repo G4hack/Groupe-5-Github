@@ -1,0 +1,138 @@
+/* Réinitialisation des marges et polices */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Corps de la page */
+body {
+    color: #333333;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+}
+
+/* En-tête avec image de fond */
+header {
+    height: 100vh;
+    background-image: url('img/R.jfif'); /* Image dynamique */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); /* Couche sombre pour contraste */
+    z-index: 1;
+}
+
+header .overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+header h2 {
+    font-size: 2rem;
+    color: #dcdcdc;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Contenu principal */
+#content {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(180deg, #ffffff, #f0f0f0);
+}
+
+#content h2 {
+    font-size: 2.5rem;
+    color: #004080; /* Bleu doux Tesla */
+    margin-bottom: 20px;
+    animation: slideUp 1.2s ease-out;
+}
+
+#content p {
+    font-size: 1.2rem;
+    color: #606060;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-retour {
+    display: inline-block;
+    background-color: #004080;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-retour:hover {
+    background-color: #0066cc; /* Accent bleu plus clair */
+    transform: translateY(-3px);
+}
+
+/* Pied de page */
+footer {
+    background-color: #004080;
+    text-align: center;
+    padding: 20px 10px;
+    border-top: 1px solid #cccccc;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
