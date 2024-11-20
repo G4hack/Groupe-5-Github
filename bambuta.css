@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #DB7093;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+    flex: 1;
+    display: flex;
+}
+
+.left {
+    flex: 0 0 25%;
+    box-sizing: border-box;
+    background-color: #D3D3D3;
+}
+
+h4,
+h5 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.right {
+    flex: 0 0 75%;
+    box-sizing: border-box;
+    background-color: white;
+    background-image: url('tulips.png');
+}
+
+footer {
+    background-color: #3CB371;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*button*/
+
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px;
+    border-radius: 0.6em;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #fff;
+    outline: 0;
+}
+
+.button {
+    border-color: #DB7093;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #DB7093 inset, 0 0 0 0 #DB7093;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.button:hover {
+    border-color: #3CB371;
+    color: white;
+    box-shadow: 0 0 10px 0 #3CB371 inset, 0 0 10px 4px #3CB371;
+}
