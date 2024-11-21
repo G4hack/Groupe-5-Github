@@ -44,7 +44,9 @@ h5 {
     flex: 0 0 75%;
     box-sizing: border-box;
     background-color: white;
-    background-image: url('tulips.png');
+     background-image: url('tulips1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer {
